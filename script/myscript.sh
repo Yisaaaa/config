@@ -26,9 +26,11 @@ function doThings() {
 	whitesur
 	volantes
 	popshell
+
 	
-	echo "All Done."
 	
+	setGit()
+	setSshKey()
 }
 
 function whitesur() {
@@ -61,7 +63,7 @@ function setSshKey() {
 	ssh-add ~/.ssh/id_rsa
 	
 	read -p "Do you want to copy the key?(y/n): " ANSWER
-	if [ ANSWER -eq "y" ]
+	if [ ANSWER == "y" ]
 	then
 		cat ~/.ssh/id_rsa.pub
 	fi

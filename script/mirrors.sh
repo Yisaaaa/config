@@ -1,5 +1,6 @@
 #! /bin/bash
 
+FILE_EXIST="false"
 
 function rankmirror() {
     echo "ranking mirrors"
@@ -20,7 +21,7 @@ function checkMirror.txt() {
 
     echo $FILES; echo
 
-    FILE_EXIST="false"
+
     for file in $FILES
         do
             if [ $file == "mirrors.txt" ]
@@ -36,3 +37,10 @@ function checkMirror.txt() {
         echo "mirrors.txt is not found"
     fi
 }
+
+checkMirror.txt()
+
+if [ FILE_EXIST == "true" ]
+    then 
+    rankmirror()
+fi
