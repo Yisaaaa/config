@@ -11,7 +11,7 @@ function setSshKey() {
 	ssh-add ~/.ssh/id_rsa
 	
 	read -p "Do you want to copy the key?(y/n): " ANSWER
-	if [ ANSWER == "y" ]
+	if [ "$ANSWER" == "y" ]
 	then
 		echo cat\n
 		echo
