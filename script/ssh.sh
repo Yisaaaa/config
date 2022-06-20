@@ -1,3 +1,4 @@
+
 #! /bin/bash
 
 function setGit() {
@@ -13,12 +14,35 @@ function setSshKey() {
 	read -p "Do you want to copy the key?(y/n): " ANSWER
 	if [ "$ANSWER" == "y" ]
 	then
+    echo
 		echo cat\n
 		echo
-		cat ~/.ssh/id_rsa.pub
+		.cat ~/.ssh/id_rsa.pub
 	fi
 }
 
-setGit
-setSshKey
-echo Done!
+function main() {
+  FILE=$HOME/.ssh/id_rsa.pub
+
+  if [ -e "$FILE" ] 
+  then
+    read -p "$FILE exist. Do you want to copy it instead?(y/n): " ANSWER 
+    
+    if [ "$ANSWER" == "y" ]
+    then
+      cat "$FILE"
+      echo
+      return
+    fi
+  fi
+  
+  SetupSSH 
+  echo
+}
+
+function SetupSSH() {
+  setGit 
+  setSshKey 
+}
+
+main 
