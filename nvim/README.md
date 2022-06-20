@@ -1,4 +1,4 @@
-# A Basic Stable IDE config for Neovim
+# A Basic Stable IDE config for Neovim From Chris@machine - Neovim from scratch
 
 > Why does this repo exist?
 
