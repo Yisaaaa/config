@@ -25,4 +25,5 @@ export _JAVA_AWT_WM_NONREPARTENTING=1
 $HOME/.config/polybar/launch.sh &
 nitrogen --restore &
 xfce4-power-manager &
-sh ~/bat_notify.sh
+sh ~/bat_notify.sh &
+wal -R 
