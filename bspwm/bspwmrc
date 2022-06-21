@@ -20,9 +20,6 @@ bspc rule -a Screenkey manage=off
 wmname LG3D
 export _JAVA_AWT_WM_NONREPARTENTING=1
 
-xsetroot -cursor_name Qogir-dark
-
-
 
 # Polybar
 $HOME/.config/polybar/launch.sh &
