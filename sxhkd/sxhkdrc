@@ -25,8 +25,8 @@ super + shift + d
                 -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 10"
 
 # power-menu 
-#super + shift + e
-#     ~/.config/rofi/powermenu.sh
+super + shift + e
+    sh ~/.config/bspwm/powermenu.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -143,11 +143,11 @@ super + {Left,Down,Up,Right}
 
 # Multimedia keys
 XF86AudioRaiseVolume
-  amixer -q set Master 1%+ unmute
+  amixer -q set Master 5%+ unmute
 
 # Still multimedia
 XF86AudioLowerVolume
-  amixer -q set Master 1%- unmute
+  amixer -q set Master 5%- unmute
 
 # still
 XF86AudioMute
