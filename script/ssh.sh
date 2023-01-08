@@ -14,10 +14,10 @@ function setSshKey() {
 	read -p "Do you want to copy the key?(y/n): " ANSWER
 	if [ "$ANSWER" == "y" ]
 	then
-    echo
-		echo cat\n
+    	echo
+		echo "\n\n"
 		echo
-		.cat ~/.ssh/id_rsa.pub
+		cat ~/.ssh/id_rsa.pub
 	fi
 }
 
